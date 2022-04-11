@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     alert('1')
+        //   })
+        $(function(){
+            // $('div').css('background','#333');
+            // $('p').css('font-weight','bold');
+            // $('.boxC').slideUp()
+            // $('#boxB').css('background', '#999')
+            //$('*').remove()
+            //$('div p').hide()
+            //$('div>p').hide()
+            // $("[status='selected']").hide()
+            //$('div:first').hide()
+            // $('div:last').hide()
+            // $('div:nth-child(2)').hide()
+            $('div:odd').css('background-color', 'orange')
+            // even
+            $('div:first-of-type').css('background', '#333')
+            
+            
+        })
+    </script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin-bottom: 10px;
+            color: rgb(204, 184, 184);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxA"><output><p class="main">box a</p></output></div>
+    <div id="boxB" status="selected"><p>box b</p></div>
+    <div class="boxC">box c</div>
+    <div class="boxD">box d</div>
+    <div class="boxE">box e</div>
+    <div class="boxF">box f</div>
+    <div class="boxG">box g</div>
+    <div class="boxH">box h</div>
+
+</body>
+</html>
